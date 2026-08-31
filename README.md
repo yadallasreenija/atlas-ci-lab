@@ -41,5 +41,6 @@ produce a **fully green** run: both `test` and `deploy-check` pass.
    GitHub from running the workflow. Read the YAML (and the Actions error) carefully.
 2. **Broken test** — `npm test` fails because of a real bug. Fix the source or the
    expectation — do **not** delete or skip the test.
+   
 3. **Secret & permissions** — the `deploy-check` job references the secret
    incorrectly and is missing a minimal `permissions:` block.
